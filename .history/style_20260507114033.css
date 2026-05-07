@@ -1,44 +1,21 @@
 body{
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #f0ebe0, #fafaf7);
+    background: linear-gradient(135deg, #e3f2fd, #f5f7fa);
 }
 
 /* NAVBAR */
 
 .navbar{
-    background: #1a2e4a;
+    background: linear-gradient(90deg, #1f1f1f, #3a3a3a);
     padding: 18px 25px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.4);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 3px solid #b8962e
-}
-
-/* CONTADOR */
-
-.contador{
-    margin: 20px 25px 0 25px;
-    background: white;
-    padding: 12px 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    border-left: 4px solid #b8962e;
-    font-weight: 600;
-    color: #333;
-}
-
-.contador span{
-    color: #b8962e;
-    font-size: 20px;
-    font-weight: 700;
 }
 
 .logo{
     font-size: 22px;
     font-weight: bold;
-    color:#f5f7fa;
+    color:#f5f7fa
 }
 
 /* MENU LATERAL */
@@ -67,12 +44,6 @@ body{
     text-decoration: none;
     display: block;
     padding: 15px 30px;
-    transition: 0.3s;
-}
-
-.menu li a:hover{
-    color: #b8962e;
-    padding-left: 38px; /* desloca levemente pra dar sensação de movimento */
 }
 
 .menu.active{
@@ -147,40 +118,39 @@ button{
     border: none;
     border-radius: 12px;
     cursor: pointer;
-    min-width: 100px;
     font-weight: 600;
-    background: #eae6df;
-    border-bottom: 1px solid #c9c3b8;
+    background: #dcdcdc;
+    transition: 0.25s;
     box-shadow: 0 3px 6px rgba(0,0,0,0.15);
-    transition: 0.3s, transform 0.2s; /* ficou a melhor versão */
+}
+
+button{
+    transition: 0.3s, transform 0.2s;
 }
 
 button:hover{
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.25);
-    border-bottom: 3px solid #b8962e;
 }
 
 
 /* CORES */
 
-.ciano { background: #5bc4bf; }
-.verde { background: #4caf78; }
-.amarelo { background: #e6b84a; }
-.vermelho { background: #c0392b; color: white; }
+.ciano { background: cyan; }
+.verde { background: limegreen; }
+.amarelo { background: gold; }
+.vermelho { background: red; color: white; }
+
+/* Botões de cor indicativo */
 
 /* LEGENDA */
 
 .legenda{
-    border-left: 4px solid #b8962e;
     margin: 20px;
     background: white;
     padding: 15px 20px;
     border-radius: 15px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
 
 .item{
@@ -196,10 +166,13 @@ button:hover{
     border-radius: 4px;
 }
 
+.legenda{
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
 /* CRONÔMETRO */
 
 .cronometro{
-    border-top: 4px solid #b8962e;
     background: white;
     padding: 30px;
     margin: 25px;
@@ -212,7 +185,6 @@ button:hover{
     font-size: 55px;
     font-weight: 700;
     color: #222;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 .botoes-crono button{
@@ -222,8 +194,4 @@ button:hover{
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
-}
-
-.botoes-crono button:hover{
-    border-bottom: 3px solid #b8962e;
 }

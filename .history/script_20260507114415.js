@@ -8,26 +8,6 @@ function toggleMenu(){
 
 }
 
-/*Contador*/ 
-let totalComentarios = 0;
-
-/* Tocar som */
-function tocarSom() {
-    const ctx = new AudioContext();
-    const oscillator = ctx.createOscillator();
-    const ganho = ctx.createGain();
-
-    oscillator.connect(ganho);
-    ganho.connect(ctx.destination);
-
-    oscillator.frequency.value = 600; // tom do clique
-    ganho.gain.setValueAtTime(0.1, ctx.currentTime); // volume baixo
-    ganho.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.1); // fade rápido
-
-    oscillator.start(ctx.currentTime);
-    oscillator.stop(ctx.currentTime + 0.1);
-}
-
 /* BOTÕES */
 
 const nomes = [
@@ -47,12 +27,6 @@ nomes.forEach(nome => {
 
     botao.addEventListener("click", () => {
 
-        /*Para o contador */
-        totalComentarios++;
-        document.getElementById("total").textContent = totalComentarios;
-        tocarSom()
-
-        /*Para os botões de nome*/ 
         botao.classList.remove(...cores);
 
         botao.classList.add(cores[estado]);
