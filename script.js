@@ -35,7 +35,7 @@ const nomes = [
 
 const container = document.getElementById("container");
 
-const cores = ["ciano","verde","amarelo","vermelho"];
+const cores = [,"verde","amarelo","vermelho"];
 
 nomes.forEach(nome => {
 
@@ -43,7 +43,7 @@ nomes.forEach(nome => {
 
     botao.textContent = nome;
 
-    let estado = 0;
+    let estado = 1;
 
     botao.addEventListener("click", () => {
 
@@ -60,7 +60,7 @@ nomes.forEach(nome => {
         estado++;
 
         if(estado >= cores.length){
-            estado = 0;
+            estado = 1;
         }
 
     });
