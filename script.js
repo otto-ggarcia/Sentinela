@@ -30,7 +30,8 @@ function tocarSom() {
 
 /* BOTÕES */
 const nomes = [
-"","Anunciada","Djanira","Éder","Eduardo","Edison","Eliana","Emerson","Iara","José","Layla","Leandro","Lucca","Lucimara","Mara","Marina","Néia","Nilson","Noemi","Ondina","Otto","Paulo","Raquel","Roque","Vinni"];
+"","Eliana","Mara","Anunciada","Leandro","Layla","Eduardo","Nilson","Edison","José","Raquel","Emerson","Noemi","Djanira","Roque","Thiago","Éder","Ondina","Néia","Lucimara","Marina","Iara","Otto","Lucca","Vinni","Paulo","Shirley"];
+/*Ordem alfabética: "","Anunciada","Djanira","Éder","Eduardo","Edison","Eliana","Emerson","Iara","José","Layla","Leandro","Lucca","Lucimara","Mara","Marina","Néia","Nilson","Noemi","Ondina","Otto","Paulo","Raquel","Roque","Vinni"];*/ 
 
 const container = document.getElementById("container");
 
